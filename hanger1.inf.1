@@ -1,0 +1,796 @@
+﻿
+ PART HANGER1
+
+Units info for the major system 'millimeter Newton Second (mmNs)'
+
+                   Length  mm 
+                     Mass  tonne 
+                    Force  N 
+                     Time  sec 
+              Temperature  C 
+ FEATURES:
+
+
+ FEATURE NUMBER       1
+ INTERNAL FEATURE ID  1
+ CHILDREN = 40(#5) 60(#6) 82(#7) 130(#8) 162(#9) 188(#10) 191(#11) 222(#12) 
+           228(#13) 263(#14) 269(#15) 534(#16) 540(#17) 570(#18) 578(#19) 
+            714(#20) 720(#21) 750(#22) 758(#23) 
+
+
+ DATUM PLANE
+
+  NO.     ELEMENT NAME    INFO                                                  
+  ---     -------------   -------------                                         
+   1      Feature Name    Defined                                               
+   2      Constraints     Defined                                               
+   2.1    Constraint #1   Defined                                               
+   2.1.1  Constr Type     X Axis                                                
+   3      Flip Datum Dir  Defined                                               
+   4      Fit             Defined                                               
+   4.1    Fit Type        Default                                               
+
+ NAME = RIGHT
+
+    FEATURE IS IN LAYER(S) :
+      01___PRT_ALL_DTM_PLN - OPERATION = SHOWN
+      01___PRT_DEF_DTM_PLN - OPERATION = SHOWN
+
+
+ ********************
+
+
+ FEATURE NUMBER       2
+ INTERNAL FEATURE ID  3
+ CHILDREN = 40(#5) 60(#6) 82(#7) 130(#8) 162(#9) 191(#11) 222(#12) 228(#13) 
+           263(#14) 269(#15) 534(#16) 540(#17) 570(#18) 578(#19) 714(#20) 
+            720(#21) 750(#22) 758(#23) 
+
+
+ DATUM PLANE
+
+  NO.     ELEMENT NAME    INFO                                                  
+  ---     -------------   -------------                                         
+   1      Feature Name    Defined                                               
+   2      Constraints     Defined                                               
+   2.1    Constraint #1   Defined                                               
+   2.1.1  Constr Type     Y Axis                                                
+   3      Flip Datum Dir  Defined                                               
+   4      Fit             Defined                                               
+   4.1    Fit Type        Default                                               
+
+ NAME = TOP
+
+    FEATURE IS IN LAYER(S) :
+      01___PRT_ALL_DTM_PLN - OPERATION = SHOWN
+      01___PRT_DEF_DTM_PLN - OPERATION = SHOWN
+
+
+ ********************
+
+
+ FEATURE NUMBER       3
+ INTERNAL FEATURE ID  5
+ CHILDREN = 40(#5) 60(#6) 82(#7) 130(#8) 162(#9) 191(#11) 222(#12) 228(#13) 
+           263(#14) 269(#15) 534(#16) 540(#17) 570(#18) 578(#19) 714(#20) 
+            720(#21) 750(#22) 758(#23) 
+
+
+ DATUM PLANE
+
+  NO.     ELEMENT NAME    INFO                                                  
+  ---     -------------   -------------                                         
+   1      Feature Name    Defined                                               
+   2      Constraints     Defined                                               
+   2.1    Constraint #1   Defined                                               
+   2.1.1  Constr Type     Z Axis                                                
+   3      Flip Datum Dir  Defined                                               
+   4      Fit             Defined                                               
+   4.1    Fit Type        Default                                               
+
+ NAME = FRONT
+
+    FEATURE IS IN LAYER(S) :
+      01___PRT_ALL_DTM_PLN - OPERATION = SHOWN
+      01___PRT_DEF_DTM_PLN - OPERATION = SHOWN
+
+
+ ********************
+
+
+ FEATURE NUMBER       4
+ INTERNAL FEATURE ID  7
+ TYPE = COORDINATE SYSTEM
+ NAME = PRT_CSYS_DEF
+
+
+    FEATURE IS IN LAYER(S) :
+      05___PRT_ALL_DTM_CSYS - OPERATION = SHOWN
+      05___PRT_DEF_DTM_CSYS - OPERATION = SHOWN
+
+
+ ********************
+
+
+ FEATURE NUMBER       5
+ INTERNAL FEATURE ID  40
+ PARENTS = 1(#1) 5(#3) 3(#2) 
+ CHILDREN = 534(#16) 540(#17) 570(#18) 578(#19) 714(#20) 720(#21) 750(#22) 
+           758(#23) 
+
+
+ PROTRUSION: Extrude
+
+  NO.     ELEMENT NAME       INFO                                               
+  ---     -------------      -------------                                      
+   1      Feature Name       Defined                                            
+   2      Extrude Feat type  Solid                                              
+   3      Material           Add                                                
+   4      Section            Defined                                            
+   4.1    Setup Plane        Defined                                            
+   4.1.1  Sketching Plane    TOP:F2(DATUM PLANE):HANGER1                        
+   4.1.2  View Direction     Side 1                                             
+   4.1.3  Orientation        Right                                              
+   4.1.4  Reference          RIGHT:F1(DATUM PLANE):HANGER1                      
+   4.2    Sketch             Defined                                            
+   5      Feature Form       Solid                                              
+   6      Direction          Side 2                                             
+   7      Depth              Defined                                            
+   7.1    Side One           Defined                                            
+   7.1.1  Side One Depth     None                                               
+   7.2    Side Two           Defined                                            
+   7.2.1  Side Two Depth     Symmetric                                          
+   7.2.2  Value              120.00                                             
+
+ SECTION NAME = Section 1 
+
+    FEATURE IS IN LAYER(S) :
+      02___PRT_ALL_AXES - OPERATION = SHOWN
+
+ FEATURE'S DIMENSIONS:
+ d0 = (Displayed:) 120
+      (   Stored:) 120.0 ( 0.01, -0.01 ) 
+ d1 = (Displayed:) 8 Dia
+      (   Stored:) 8.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       6
+ INTERNAL FEATURE ID  60
+ PARENTS = 3(#2) 5(#3) 1(#1) 
+ CHILDREN = 82(#7) 
+
+
+ Sketch
+
+  NO.     ELEMENT NAME     INFO                                                 
+  ---     -------------    -------------                                        
+   1      Feature Name     Defined                                              
+   2      Section          Defined                                              
+   2.1    Setup Plane      Defined                                              
+   2.1.1  Sketching Plane  RIGHT:F1(DATUM PLANE):HANGER1                        
+   2.1.2  View Direction   Side 1                                               
+   2.1.3  Orientation      Left                                                 
+   2.1.4  Reference        TOP:F2(DATUM PLANE):HANGER1                          
+   2.2    Sketch           Defined                                              
+   3       X-hatching      Closed curve sections will NOT be cross hatched      
+   3.1     Display         NO                                                   
+
+ SECTION NAME = Sketch 1 
+ OPEN SECTION
+
+    FEATURE IS IN LAYER(S) :
+      03___PRT_ALL_CURVES - OPERATION = SHOWN
+
+ FEATURE'S DIMENSIONS:
+ d3 = (Displayed:) 20 Dia
+      (   Stored:) 20.0 ( 0.01, -0.01 ) 
+ d4 = (Displayed:) 24
+      (   Stored:) 24.0 ( 0.01, -0.01 ) 
+ d5 = (Displayed:) 4
+      (   Stored:) 4.0 ( 0.01, -0.01 ) 
+ d6 = (Displayed:) 20
+      (   Stored:) 20.0 ( 0.01, -0.01 ) 
+ d11 = (Displayed:) 4
+       (   Stored:) 4.0 ( 0.01, -0.01 ) 
+ d12 = (Displayed:) 20
+       (   Stored:) 20.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       7
+ INTERNAL FEATURE ID  82
+ PARENTS = 60(#6) 
+
+
+ PROTRUSION: Revolve
+
+  NO.      ELEMENT NAME         INFO                                            
+  ---      -------------        -------------                                   
+   1       Feature Name         Defined                                         
+   2       Extrude Feat type    Solid                                           
+   3       Material             Add                                             
+   4       Section              Defined                                         
+   4.1     Reference Sketch     F6(SKETCH_1):HANGER1                            
+   5       Feature Form         Solid                                           
+   6       Material Side        Side Two                                        
+   7       Revolve Axis         Defined                                         
+   8       Revolve Axis Option  Internal Centerline                             
+   9       Direction            Side 2                                          
+   10      Angle                Defined                                         
+   10.1    Side One             Defined                                         
+   10.1.1  Side One Angle       None                                            
+   10.2    Side Two             Defined                                         
+   10.2.1  Side Two Angle       Symmetric                                       
+   10.2.2  Value                45.0                                            
+
+ SECTION NAME = Sketch 1 
+ OPEN SECTION
+
+
+ FEATURE'S DIMENSIONS:
+ d13 = (Displayed:) 45
+       (   Stored:) 45.0 ( 0.5, -0.5 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       8
+ INTERNAL FEATURE ID  130
+ PARENTS = 3(#2) 5(#3) 1(#1) 
+ CHILDREN = 162(#9) 191(#11) 
+
+
+ Sketch
+
+  NO.     ELEMENT NAME     INFO                                                 
+  ---     -------------    -------------                                        
+   1      Feature Name     Defined                                              
+   2      Section          Defined                                              
+   2.1    Setup Plane      Defined                                              
+   2.1.1  Sketching Plane  RIGHT:F1(DATUM PLANE):HANGER1                        
+   2.1.2  View Direction   Side 1                                               
+   2.1.3  Orientation      Bottom                                               
+   2.1.4  Reference        TOP:F2(DATUM PLANE):HANGER1                          
+   2.2    Sketch           Defined                                              
+   3       X-hatching      Closed curve sections will NOT be cross hatched      
+   3.1     Display         NO                                                   
+
+ SECTION NAME = Sketch 2 
+
+    FEATURE IS IN LAYER(S) :
+      03___PRT_ALL_CURVES - OPERATION = SHOWN
+
+ FEATURE'S DIMENSIONS:
+ d21 = (Displayed:) 15 Dia
+       (   Stored:) 15.0 ( 0.01, -0.01 ) 
+ d22 = (Displayed:) 20
+       (   Stored:) 20.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       9
+ INTERNAL FEATURE ID  162
+ PARENTS = 130(#8) 
+
+
+ CUT: Extrude
+
+  NO.     ELEMENT NAME       INFO                                               
+  ---     -------------      -------------                                      
+   1      Feature Name       Defined                                            
+   2      Extrude Feat type  Solid                                              
+   3      Material           Remove                                             
+   4      Section            Defined                                            
+   4.1    Reference Sketch   F8(SKETCH_2):HANGER1                               
+   5      Feature Form       Solid                                              
+   6      Material Side      Side Two                                           
+   7      Direction          Side 2                                             
+   8      Depth              Defined                                            
+   8.1    Side One           Defined                                            
+   8.1.1  Side One Depth     None                                               
+   8.2    Side Two           Defined                                            
+   8.2.1  Side Two Depth     Thru All                                           
+
+ SECTION NAME = Sketch 2 
+
+    FEATURE IS IN LAYER(S) :
+      02___PRT_ALL_AXES - OPERATION = SHOWN
+
+
+ ********************
+
+
+ FEATURE NUMBER       10
+ INTERNAL FEATURE ID  188
+ PARENTS = 1(#1) 
+
+
+ Mirror
+
+  NO.   ELEMENT NAME  INFO                                                      
+  ---   -------------  -------------                                             
+   1    Feature Name  Defined                                                   
+   2    Mirror Plane  RIGHT:F1(DATUM PLANE):HANGER1                             
+
+
+
+
+ MEMBER OF A GROUP, NAME =  
+  LEADING FEATURE OF THE GROUP: ID = 188 
+  LAST FEATURE OF THE GROUP: ID = 191 
+ THIS FEATURE WAS CREATED BY MIRRORING
+
+ ********************
+
+
+ FEATURE NUMBER       11
+ INTERNAL FEATURE ID  191
+ PARENTS = 130(#8) 
+
+
+ CUT: Extrude
+
+  NO.     ELEMENT NAME       INFO                                               
+  ---     -------------      -------------                                      
+   1      Feature Name       Defined                                            
+   2      Extrude Feat type  Solid                                              
+   3      Material           Remove                                             
+   4      Section            Defined                                            
+   4.1    Reference Sketch   F8(SKETCH_2):HANGER1                               
+   5      Feature Form       Solid                                              
+   6      Material Side      Side Two                                           
+   7      Direction          Side 2                                             
+   8      Depth              Defined                                            
+   8.1    Side One           Defined                                            
+   8.1.1  Side One Depth     None                                               
+   8.2    Side Two           Defined                                            
+   8.2.1  Side Two Depth     Thru All                                           
+
+ SECTION NAME = Sketch 2 
+
+
+
+ MEMBER OF A GROUP, NAME =  
+  LEADING FEATURE OF THE GROUP: ID = 188 
+  LAST FEATURE OF THE GROUP: ID = 191 
+ THIS FEATURE WAS CREATED BY MIRRORING
+
+ ********************
+
+
+ FEATURE NUMBER       12
+ INTERNAL FEATURE ID  222
+ PARENTS = 3(#2) 5(#3) 1(#1) 
+ CHILDREN = 228(#13) 
+
+
+ Sketch
+
+  NO.     ELEMENT NAME     INFO                                                 
+  ---     -------------    -------------                                        
+   1      Feature Name     Defined                                              
+   2      Section          Defined                                              
+   2.1    Setup Plane      Defined                                              
+   2.1.1  Sketching Plane  RIGHT:F1(DATUM PLANE):HANGER1                        
+   2.1.2  View Direction   Side 1                                               
+   2.1.3  Orientation      Left                                                 
+   2.1.4  Reference        TOP:F2(DATUM PLANE):HANGER1                          
+   2.2    Sketch           Defined                                              
+   3       X-hatching      Closed curve sections will NOT be cross hatched      
+   3.1     Display         NO                                                   
+
+ SECTION NAME = Sketch 3 
+
+    FEATURE IS IN LAYER(S) :
+      03___PRT_ALL_CURVES - OPERATION = SHOWN
+
+ FEATURE'S DIMENSIONS:
+ d33 = (Displayed:) 15 Dia
+       (   Stored:) 15.0 ( 0.01, -0.01 ) 
+ d34 = (Displayed:) 20
+       (   Stored:) 20.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       13
+ INTERNAL FEATURE ID  228
+ PARENTS = 222(#12) 
+
+
+ PROTRUSION: Extrude
+
+  NO.     ELEMENT NAME       INFO                                               
+  ---     -------------      -------------                                      
+   1      Feature Name       Defined                                            
+   2      Extrude Feat type  Solid                                              
+   3      Material           Add                                                
+   4      Section            Defined                                            
+   4.1    Reference Sketch   F12(SKETCH_3):HANGER1                              
+   5      Feature Form       Solid                                              
+   6      Direction          Side 2                                             
+   7      Depth              Defined                                            
+   7.1    Side One           Defined                                            
+   7.1.1  Side One Depth     None                                               
+   7.2    Side Two           Defined                                            
+   7.2.1  Side Two Depth     Symmetric                                          
+   7.2.2  Value              5.00                                               
+
+ SECTION NAME = Sketch 3 
+
+
+ FEATURE'S DIMENSIONS:
+ d35 = (Displayed:) 5
+       (   Stored:) 5.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       14
+ INTERNAL FEATURE ID  263
+ PARENTS = 3(#2) 5(#3) 1(#1) 
+ CHILDREN = 269(#15) 
+
+
+ Sketch
+
+  NO.     ELEMENT NAME     INFO                                                 
+  ---     -------------    -------------                                        
+   1      Feature Name     Defined                                              
+   2      Section          Defined                                              
+   2.1    Setup Plane      Defined                                              
+   2.1.1  Sketching Plane  RIGHT:F1(DATUM PLANE):HANGER1                        
+   2.1.2  View Direction   Side 1                                               
+   2.1.3  Orientation      Left                                                 
+   2.1.4  Reference        TOP:F2(DATUM PLANE):HANGER1                          
+   2.2    Sketch           Defined                                              
+   3       X-hatching      Closed curve sections will NOT be cross hatched      
+   3.1     Display         NO                                                   
+
+ SECTION NAME = Sketch 4 
+
+    FEATURE IS IN LAYER(S) :
+      03___PRT_ALL_CURVES - OPERATION = SHOWN
+
+ FEATURE'S DIMENSIONS:
+ d39 = (Displayed:) 10 Dia
+       (   Stored:) 10.0 ( 0.01, -0.01 ) 
+ d40 = (Displayed:) 20
+       (   Stored:) 20.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       15
+ INTERNAL FEATURE ID  269
+ PARENTS = 263(#14) 
+
+
+ CUT: Extrude
+
+  NO.     ELEMENT NAME       INFO                                               
+  ---     -------------      -------------                                      
+   1      Feature Name       Defined                                            
+   2      Extrude Feat type  Solid                                              
+   3      Material           Remove                                             
+   4      Section            Defined                                            
+   4.1    Reference Sketch   F14(SKETCH_4):HANGER1                              
+   5      Feature Form       Solid                                              
+   6      Material Side      Side Two                                           
+   7      Direction          Side 2                                             
+   8      Depth              Defined                                            
+   8.1    Side One           Defined                                            
+   8.1.1  Side One Depth     None                                               
+   8.2    Side Two           Defined                                            
+   8.2.1  Side Two Depth     Symmetric                                          
+   8.2.2  Value              39.23                                              
+
+ SECTION NAME = Sketch 4 
+
+
+ FEATURE'S DIMENSIONS:
+ d41 = (Displayed:) 39.23
+       (   Stored:) 39.23 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       16
+ INTERNAL FEATURE ID  534
+ PARENTS = 1(#1) 5(#3) 40(#5) 
+ CHILDREN = 540(#17) 
+
+
+ Sketch
+
+  NO.     ELEMENT NAME     INFO                                                 
+  ---     -------------    -------------                                        
+   1      Feature Name     Defined                                              
+   2      Section          Defined                                              
+   2.1    Setup Plane      Defined                                              
+   2.1.1  Sketching Plane  Surf:F5(EXTRUDE_1):HANGER1                           
+   2.1.2  View Direction   Side 1                                               
+   2.1.3  Orientation      Bottom                                               
+   2.1.4  Reference        RIGHT:F1(DATUM PLANE):HANGER1                        
+   2.2    Sketch           Defined                                              
+   3       X-hatching      Closed curve sections will NOT be cross hatched      
+   3.1     Display         NO                                                   
+
+ SECTION NAME = Sketch 6 
+
+    FEATURE IS IN LAYER(S) :
+      03___PRT_ALL_CURVES - OPERATION = SHOWN
+
+ FEATURE'S DIMENSIONS:
+ d66 = (Displayed:) 8 Dia
+       (   Stored:) 8.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       17
+ INTERNAL FEATURE ID  540
+ PARENTS = 534(#16) 
+
+
+ PROTRUSION: Extrude
+
+  NO.     ELEMENT NAME       INFO                                               
+  ---     -------------      -------------                                      
+   1      Feature Name       Defined                                            
+   2      Extrude Feat type  Solid                                              
+   3      Material           Add                                                
+   4      Section            Defined                                            
+   4.1    Reference Sketch   F16(SKETCH_6):HANGER1                              
+   5      Feature Form       Solid                                              
+   6      Direction          Side 2                                             
+   7      Depth              Defined                                            
+   7.1    Side One           Defined                                            
+   7.1.1  Side One Depth     None                                               
+   7.2    Side Two           Defined                                            
+   7.2.1  Side Two Depth     Variable                                           
+   7.2.2  Value              15.00                                              
+
+ SECTION NAME = Sketch 6 
+
+
+ FEATURE'S DIMENSIONS:
+ d67 = (Displayed:) 15
+       (   Stored:) 15.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       18
+ INTERNAL FEATURE ID  570
+ PARENTS = 5(#3) 40(#5) 1(#1) 3(#2) 
+ CHILDREN = 578(#19) 
+
+
+ Sketch
+
+  NO.     ELEMENT NAME     INFO                                                 
+  ---     -------------    -------------                                        
+   1      Feature Name     Defined                                              
+   2      Section          Defined                                              
+   2.1    Setup Plane      Defined                                              
+   2.1.1  Sketching Plane  RIGHT:F1(DATUM PLANE):HANGER1                        
+   2.1.2  View Direction   Side 1                                               
+   2.1.3  Orientation      Top                                                  
+   2.1.4  Reference        TOP:F2(DATUM PLANE):HANGER1                          
+   2.2    Sketch           Defined                                              
+
+ SECTION NAME = Sketch 7 
+ OPEN SECTION
+
+    FEATURE IS IN LAYER(S) :
+      02___PRT_ALL_AXES - OPERATION = SHOWN
+      03___PRT_ALL_CURVES - OPERATION = SHOWN
+
+ FEATURE'S DIMENSIONS:
+ d70 = (Displayed:) 15
+       (   Stored:) 15.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       19
+ INTERNAL FEATURE ID  578
+ PARENTS = 570(#18) 
+
+
+ CUT: Helical Sweep
+
+  NO.      ELEMENT NAME                   INFO                                  
+  ---      -------------                  -------------                         
+   1       Feature Name                   Defined                               
+   2       Section                        Defined                               
+   2.1     Sketch                         Defined                               
+   3       Extrude Feat type              Solid                                 
+   4       Material                       Remove                                
+   5       Feature Form                   Solid                                 
+   6       Material Side                  Side Two                              
+   7       Profile section                Defined                               
+   7.1     Reference Sketch               F18(SKETCH_7):HANGER1                 
+   8       Sketch plane orientation       Through axis of revolution            
+   9       Section Flip                   Through axis of revolution            
+   10      Revolve Axis                   Defined                               
+   11      Revolve Axis Option            Internal Centerline                   
+   12      Pitch array                    Defined                               
+   12.1    Pitch Compounds                Defined                               
+   12.1.1  Pitch reference                Defined                               
+   12.1.2  Pitch value                    1.5000                                
+   12.1.3  Pitch reference option         Start Point                           
+   12.1.4  Pitch location parameter       0.0000                                
+   12.1.5  Pitch location parameter       0.0000                                
+   13      Section const/variable option  Keep constant section                 
+   14      Pitch reference option         Use left handed rule.                 
+
+ SECTION NAME = Sketch 7 
+ SECTION NAME = Sweep Section 
+
+
+ FEATURE'S DIMENSIONS:
+ d72 = (Displayed:) 1.5PITCH
+       (   Stored:) 1.5 ( 0.01, -0.01 ) 
+ d75 = (Displayed:) 30
+       (   Stored:) 30.0 ( 0.5, -0.5 ) 
+ d76 = (Displayed:) 0.5
+       (   Stored:) 0.5 ( 0.01, -0.01 ) 
+ d77 = (Displayed:) 60
+       (   Stored:) 60.0 ( 0.5, -0.5 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       20
+ INTERNAL FEATURE ID  714
+ PARENTS = 1(#1) 5(#3) 40(#5) 
+ CHILDREN = 720(#21) 
+
+
+ Sketch
+
+  NO.     ELEMENT NAME     INFO                                                 
+  ---     -------------    -------------                                        
+   1      Feature Name     Defined                                              
+   2      Section          Defined                                              
+   2.1    Setup Plane      Defined                                              
+   2.1.1  Sketching Plane  Surf:F5(EXTRUDE_1):HANGER1                           
+   2.1.2  View Direction   Side 1                                               
+   2.1.3  Orientation      Bottom                                               
+   2.1.4  Reference        RIGHT:F1(DATUM PLANE):HANGER1                        
+   2.2    Sketch           Defined                                              
+   3       X-hatching      Closed curve sections will NOT be cross hatched      
+   3.1     Display         NO                                                   
+
+ SECTION NAME = Sketch 8 
+
+    FEATURE IS IN LAYER(S) :
+      03___PRT_ALL_CURVES - OPERATION = SHOWN
+
+ FEATURE'S DIMENSIONS:
+ d78 = (Displayed:) 8 Dia
+       (   Stored:) 8.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       21
+ INTERNAL FEATURE ID  720
+ PARENTS = 714(#20) 
+
+
+ PROTRUSION: Extrude
+
+  NO.     ELEMENT NAME       INFO                                               
+  ---     -------------      -------------                                      
+   1      Feature Name       Defined                                            
+   2      Extrude Feat type  Solid                                              
+   3      Material           Add                                                
+   4      Section            Defined                                            
+   4.1    Reference Sketch   F20(SKETCH_8):HANGER1                              
+   5      Feature Form       Solid                                              
+   6      Direction          Side 2                                             
+   7      Depth              Defined                                            
+   7.1    Side One           Defined                                            
+   7.1.1  Side One Depth     None                                               
+   7.2    Side Two           Defined                                            
+   7.2.1  Side Two Depth     Variable                                           
+   7.2.2  Value              15.00                                              
+
+ SECTION NAME = Sketch 8 
+
+
+ FEATURE'S DIMENSIONS:
+ d79 = (Displayed:) 15
+       (   Stored:) 15.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       22
+ INTERNAL FEATURE ID  750
+ PARENTS = 1(#1) 40(#5) 5(#3) 
+ CHILDREN = 758(#23) 
+
+
+ Sketch
+
+  NO.     ELEMENT NAME     INFO                                                 
+  ---     -------------    -------------                                        
+   1      Feature Name     Defined                                              
+   2      Section          Defined                                              
+   2.1    Setup Plane      Defined                                              
+   2.1.1  Sketching Plane  FRONT:F3(DATUM PLANE):HANGER1                        
+   2.1.2  View Direction   Side 1                                               
+   2.1.3  Orientation      Bottom                                               
+   2.1.4  Reference        RIGHT:F1(DATUM PLANE):HANGER1                        
+   2.2    Sketch           Defined                                              
+
+ SECTION NAME = Sketch 9 
+ OPEN SECTION
+
+    FEATURE IS IN LAYER(S) :
+      02___PRT_ALL_AXES - OPERATION = SHOWN
+      03___PRT_ALL_CURVES - OPERATION = SHOWN
+
+ FEATURE'S DIMENSIONS:
+ d82 = (Displayed:) 15
+       (   Stored:) 15.0 ( 0.01, -0.01 ) 
+
+ ********************
+
+
+ FEATURE NUMBER       23
+ INTERNAL FEATURE ID  758
+ PARENTS = 750(#22) 
+
+
+ CUT: Helical Sweep
+
+  NO.      ELEMENT NAME                   INFO                                  
+  ---      -------------                  -------------                         
+   1       Feature Name                   Defined                               
+   2       Section                        Defined                               
+   2.1     Sketch                         Defined                               
+   3       Extrude Feat type              Solid                                 
+   4       Material                       Remove                                
+   5       Feature Form                   Solid                                 
+   6       Material Side                  Side Two                              
+   7       Profile section                Defined                               
+   7.1     Reference Sketch               F22(SKETCH_9):HANGER1                 
+   8       Sketch plane orientation       Through axis of revolution            
+   9       Section Flip                   Through axis of revolution            
+   10      Revolve Axis                   Defined                               
+   11      Revolve Axis Option            Internal Centerline                   
+   12      Pitch array                    Defined                               
+   12.1    Pitch Compounds                Defined                               
+   12.1.1  Pitch reference                Defined                               
+   12.1.2  Pitch value                    1.5000                                
+   12.1.3  Pitch reference option         Start Point                           
+   12.1.4  Pitch location parameter       0.0000                                
+   12.1.5  Pitch location parameter       0.0000                                
+   13      Section const/variable option  Keep constant section                 
+   14      Pitch reference option         Use left handed rule.                 
+
+ SECTION NAME = Sketch 9 
+ SECTION NAME = Sweep Section 
+
+
+ FEATURE'S DIMENSIONS:
+ d84 = (Displayed:) 1.5PITCH
+       (   Stored:) 1.5 ( 0.01, -0.01 ) 
+ d87 = (Displayed:) 30
+       (   Stored:) 30.0 ( 0.5, -0.5 ) 
+ d88 = (Displayed:) 0.5
+       (   Stored:) 0.5 ( 0.01, -0.01 ) 
+ d89 = (Displayed:) 60
+       (   Stored:) 60.0 ( 0.5, -0.5 ) 
+
+ ********************
+
